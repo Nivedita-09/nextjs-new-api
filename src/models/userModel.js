@@ -1,5 +1,4 @@
 import mongoose from "mongoose";
-// import { unique } from "next/dist/build/utils";
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -16,7 +15,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please provide a password"],
   },
-  isVerified: {
+  isVerfied: {
     type: Boolean,
     default: false,
   },
